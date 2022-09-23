@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>SSQuartz.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
+		<key>SSQuartzResources.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>quartz.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<true/>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>FE150BC519E7708900B3F9D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE150BD019E7708A00B3F9D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE150C1F19E775B000B3F9D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE150C2919E775B000B3F9D4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FE1ED9FB1BFD2DD500ED7968</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEBBD2411CB6AC9C008FFA6C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FEF7F40E1C850F7D00A07F79</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

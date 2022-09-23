@@ -1,0 +1,928 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE05B36821D8893D0042A97F /* SSQuartzDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = FE05B36721D8893D0042A97F /* SSQuartzDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE150BCC19E7708900B3F9D4 /* SSQuartz.h in Headers */ = {isa = PBXBuildFile; fileRef = FE150BCB19E7708900B3F9D4 /* SSQuartz.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE150BE419E7710B00B3F9D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150BE319E7710B00B3F9D4 /* Cocoa.framework */; };
+		FE150BE619E7711300B3F9D4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150BE519E7711300B3F9D4 /* QuartzCore.framework */; };
+		FE150BEF19E7712200B3F9D4 /* CALayer+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE150BE919E7712200B3F9D4 /* CALayer+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE150BF019E7712200B3F9D4 /* CALayer+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BEA19E7712200B3F9D4 /* CALayer+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE150BF119E7712200B3F9D4 /* CATextLayer+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE150BEB19E7712200B3F9D4 /* CATextLayer+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE150BF219E7712200B3F9D4 /* CATextLayer+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BEC19E7712200B3F9D4 /* CATextLayer+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE150BF519E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = FE150BF319E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE150BF619E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BF419E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE150C0019E771A500B3F9D4 /* SSBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150BFD19E7719B00B3F9D4 /* SSBase.framework */; };
+		FE150C1A19E7721000B3F9D4 /* SSFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150C1519E7720100B3F9D4 /* SSFoundation.framework */; };
+		FE150C1B19E7721000B3F9D4 /* SSGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150C0A19E771FB00B3F9D4 /* SSGraphics.framework */; };
+		FE150C3719E775BF00B3F9D4 /* CAKeyframeAnimation+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BF419E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m */; };
+		FE150C3819E775C100B3F9D4 /* CALayer+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BEA19E7712200B3F9D4 /* CALayer+SSAdditions.m */; };
+		FE150C3919E775C400B3F9D4 /* CATextLayer+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FE150BEC19E7712200B3F9D4 /* CATextLayer+SSAdditions.m */; };
+		FE150C3A19E775D300B3F9D4 /* CATextLayer+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE150BEB19E7712200B3F9D4 /* CATextLayer+SSAdditions.h */; };
+		FE150C3B19E775D600B3F9D4 /* CAKeyframeAnimation+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE150BF319E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h */; };
+		FE150C3C19E775D900B3F9D4 /* CALayer+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE150BE919E7712200B3F9D4 /* CALayer+SSAdditions.h */; };
+		FE1EDAE01BFD5ED200ED7968 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1EDADF1BFD5ED200ED7968 /* UIKit.framework */; };
+		FE1EDAE81BFD5EE000ED7968 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1EDAE71BFD5EE000ED7968 /* QuartzCore.framework */; };
+		FE1EDAE91BFD5EF100ED7968 /* libfoundation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE150C1719E7720100B3F9D4 /* libfoundation.a */; };
+		FE1EDAEB1BFD5F1B00ED7968 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1EDAEA1BFD5F1B00ED7968 /* CoreVideo.framework */; };
+		FE1EDAED1BFD5F5700ED7968 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE1EDAEC1BFD5F5700ED7968 /* Foundation.framework */; };
+		FE61742A21FAE30F00EB6019 /* SSQuartzDefines.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE05B36721D8893D0042A97F /* SSQuartzDefines.h */; };
+		FE632C261CD97F66004CAE6B /* SSDisplayLink.h in Headers */ = {isa = PBXBuildFile; fileRef = FE632C241CD97F66004CAE6B /* SSDisplayLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE632C271CD97F66004CAE6B /* SSDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632C251CD97F66004CAE6B /* SSDisplayLink.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE632C331CD98832004CAE6B /* SSDisplayLinkHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = FE632C311CD98832004CAE6B /* SSDisplayLinkHelper.h */; };
+		FE632C341CD98832004CAE6B /* SSDisplayLinkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632C321CD98832004CAE6B /* SSDisplayLinkHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE632C351CD98832004CAE6B /* SSDisplayLinkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FE632C321CD98832004CAE6B /* SSDisplayLinkHelper.m */; };
+		FEA5EF121A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FEA5EF101A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FEA5EF131A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA5EF111A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FEA5EF141A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA5EF111A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m */; };
+		FEA5EF191A03C6CE005B099F /* SSSpinningProgressIndicatorLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEA5EF101A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h */; };
+		FEDA19071E2EC1A30008EFEB /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEDA19061E2EC1A30008EFEB /* CoreFoundation.framework */; };
+		FEDA190C1E2EC2F10008EFEB /* ShadowBorderBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA19081E2EC2F10008EFEB /* ShadowBorderBottom.png */; };
+		FEDA190D1E2EC2F10008EFEB /* ShadowBorderBottom.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA19081E2EC2F10008EFEB /* ShadowBorderBottom.png */; };
+		FEDA190E1E2EC2F10008EFEB /* ShadowBorderLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA19091E2EC2F10008EFEB /* ShadowBorderLeft.png */; };
+		FEDA190F1E2EC2F10008EFEB /* ShadowBorderLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA19091E2EC2F10008EFEB /* ShadowBorderLeft.png */; };
+		FEDA19101E2EC2F10008EFEB /* ShadowBorderRight.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA190A1E2EC2F10008EFEB /* ShadowBorderRight.png */; };
+		FEDA19111E2EC2F10008EFEB /* ShadowBorderRight.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA190A1E2EC2F10008EFEB /* ShadowBorderRight.png */; };
+		FEDA19121E2EC2F10008EFEB /* ShadowBorderTop.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA190B1E2EC2F10008EFEB /* ShadowBorderTop.png */; };
+		FEDA19131E2EC2F10008EFEB /* ShadowBorderTop.png in Resources */ = {isa = PBXBuildFile; fileRef = FEDA190B1E2EC2F10008EFEB /* ShadowBorderTop.png */; };
+		FEDA193E1E2EC84B0008EFEB /* SSQuartz-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = FEDA193D1E2EC84B0008EFEB /* SSQuartz-Prefix.pch */; };
+		FEDF10631CADC85700B94470 /* SSQuartz.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FE150BCB19E7708900B3F9D4 /* SSQuartz.h */; };
+		FEF563811C740C7300665420 /* CADisplayLink+SSAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF5637E1C740C7300665420 /* CADisplayLink+SSAdditions.m */; };
+		FEF563881C7410CA00665420 /* CADisplayLink+SSAdditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FEF5637D1C740C7300665420 /* CADisplayLink+SSAdditions.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FE150BFC19E7719B00B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150BF719E7719B00B3F9D4 /* SSBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE55CCA2190E8A70007827A0;
+			remoteInfo = SSBase;
+		};
+		FE150BFE19E7719B00B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150BF719E7719B00B3F9D4 /* SSBase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE55CCD4190E8AA1007827A0;
+			remoteInfo = base;
+		};
+		FE150C0919E771FB00B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0319E771FB00B3F9D4 /* SSGraphics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEFDCFD918364D2400B941E2;
+			remoteInfo = SSGraphics;
+		};
+		FE150C0B19E771FB00B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0319E771FB00B3F9D4 /* SSGraphics.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEFDD035183656B400B941E2;
+			remoteInfo = graphics;
+		};
+		FE150C1419E7720100B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
+			remoteInfo = SSFoundation;
+		};
+		FE150C1619E7720100B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FEF410DC172B28C800B95768;
+			remoteInfo = foundation;
+		};
+		FE150C1819E7720600B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
+			remoteInfo = SSFoundation;
+		};
+		FE150D3519E77B4300B3F9D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF410DB172B28C800B95768;
+			remoteInfo = foundation;
+		};
+		FECF62341E1D547200FBD677 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FE736E1F1E0CD4EB00792695;
+			remoteInfo = SSFoundationResources;
+		};
+		FEF7F4221C850F9300A07F79 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FE150BBD19E7708900B3F9D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FEF7F40E1C850F7D00A07F79;
+			remoteInfo = SSQuartzResources;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FE150C1E19E775B000B3F9D4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FEF563881C7410CA00665420 /* CADisplayLink+SSAdditions.h in CopyFiles */,
+				FE150C3B19E775D600B3F9D4 /* CAKeyframeAnimation+SSAdditions.h in CopyFiles */,
+				FE150C3C19E775D900B3F9D4 /* CALayer+SSAdditions.h in CopyFiles */,
+				FE150C3A19E775D300B3F9D4 /* CATextLayer+SSAdditions.h in CopyFiles */,
+				FEDF10631CADC85700B94470 /* SSQuartz.h in CopyFiles */,
+				FE61742A21FAE30F00EB6019 /* SSQuartzDefines.h in CopyFiles */,
+				FEA5EF191A03C6CE005B099F /* SSSpinningProgressIndicatorLayer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FE05B36721D8893D0042A97F /* SSQuartzDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSQuartzDefines.h; sourceTree = "<group>"; };
+		FE150BC619E7708900B3F9D4 /* SSQuartz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SSQuartz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE150BCA19E7708900B3F9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE150BCB19E7708900B3F9D4 /* SSQuartz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSQuartz.h; sourceTree = "<group>"; };
+		FE150BE319E7710B00B3F9D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FE150BE519E7711300B3F9D4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FE150BE919E7712200B3F9D4 /* CALayer+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+SSAdditions.h"; sourceTree = "<group>"; };
+		FE150BEA19E7712200B3F9D4 /* CALayer+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+SSAdditions.m"; sourceTree = "<group>"; };
+		FE150BEB19E7712200B3F9D4 /* CATextLayer+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CATextLayer+SSAdditions.h"; sourceTree = "<group>"; };
+		FE150BEC19E7712200B3F9D4 /* CATextLayer+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CATextLayer+SSAdditions.m"; sourceTree = "<group>"; };
+		FE150BF319E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAKeyframeAnimation+SSAdditions.h"; sourceTree = "<group>"; };
+		FE150BF419E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAKeyframeAnimation+SSAdditions.m"; sourceTree = "<group>"; };
+		FE150BF719E7719B00B3F9D4 /* SSBase.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSBase.xcodeproj; path = ../SSBase/SSBase.xcodeproj; sourceTree = "<group>"; };
+		FE150C0319E771FB00B3F9D4 /* SSGraphics.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSGraphics.xcodeproj; path = ../SSGraphics/SSGraphics.xcodeproj; sourceTree = "<group>"; };
+		FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SSFoundation.xcodeproj; path = ../SSFoundation/SSFoundation.xcodeproj; sourceTree = "<group>"; };
+		FE150C2019E775B000B3F9D4 /* libquartz.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libquartz.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE150C2219E775B000B3F9D4 /* quartz.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = quartz.h; sourceTree = "<group>"; };
+		FE1EDADF1BFD5ED200ED7968 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FE1EDAE71BFD5EE000ED7968 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		FE1EDAEA1BFD5F1B00ED7968 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		FE1EDAEC1BFD5F5700ED7968 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		FE602A731A2A01440033A498 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FE602A751A2A01630033A498 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		FE632C241CD97F66004CAE6B /* SSDisplayLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDisplayLink.h; sourceTree = "<group>"; };
+		FE632C251CD97F66004CAE6B /* SSDisplayLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDisplayLink.m; sourceTree = "<group>"; };
+		FE632C311CD98832004CAE6B /* SSDisplayLinkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSDisplayLinkHelper.h; sourceTree = "<group>"; };
+		FE632C321CD98832004CAE6B /* SSDisplayLinkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSDisplayLinkHelper.m; sourceTree = "<group>"; };
+		FEA5EF101A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSSpinningProgressIndicatorLayer.h; sourceTree = "<group>"; };
+		FEA5EF111A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSSpinningProgressIndicatorLayer.m; sourceTree = "<group>"; };
+		FEDA19061E2EC1A30008EFEB /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		FEDA19081E2EC2F10008EFEB /* ShadowBorderBottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowBorderBottom.png; sourceTree = "<group>"; };
+		FEDA19091E2EC2F10008EFEB /* ShadowBorderLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowBorderLeft.png; sourceTree = "<group>"; };
+		FEDA190A1E2EC2F10008EFEB /* ShadowBorderRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowBorderRight.png; sourceTree = "<group>"; };
+		FEDA190B1E2EC2F10008EFEB /* ShadowBorderTop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShadowBorderTop.png; sourceTree = "<group>"; };
+		FEDA193D1E2EC84B0008EFEB /* SSQuartz-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SSQuartz-Prefix.pch"; sourceTree = "<group>"; };
+		FEDA193F1E2EC8A40008EFEB /* SSQuartzResources_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSQuartzResources_Prefix.pch; sourceTree = "<group>"; };
+		FEF5637D1C740C7300665420 /* CADisplayLink+SSAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CADisplayLink+SSAdditions.h"; sourceTree = "<group>"; };
+		FEF5637E1C740C7300665420 /* CADisplayLink+SSAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CADisplayLink+SSAdditions.m"; sourceTree = "<group>"; };
+		FEF7F40F1C850F7D00A07F79 /* SSQuartzResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSQuartzResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF7F4111C850F7D00A07F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE150BC219E7708900B3F9D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE150C1A19E7721000B3F9D4 /* SSFoundation.framework in Frameworks */,
+				FE150C1B19E7721000B3F9D4 /* SSGraphics.framework in Frameworks */,
+				FE150C0019E771A500B3F9D4 /* SSBase.framework in Frameworks */,
+				FE150BE619E7711300B3F9D4 /* QuartzCore.framework in Frameworks */,
+				FE150BE419E7710B00B3F9D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE150C1D19E775B000B3F9D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE1EDAE91BFD5EF100ED7968 /* libfoundation.a in Frameworks */,
+				FE1EDAED1BFD5F5700ED7968 /* Foundation.framework in Frameworks */,
+				FE1EDAEB1BFD5F1B00ED7968 /* CoreVideo.framework in Frameworks */,
+				FE1EDAE81BFD5EE000ED7968 /* QuartzCore.framework in Frameworks */,
+				FE1EDAE01BFD5ED200ED7968 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF7F40C1C850F7D00A07F79 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDA19071E2EC1A30008EFEB /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE150BBC19E7708900B3F9D4 = {
+			isa = PBXGroup;
+			children = (
+				FE150BC819E7708900B3F9D4 /* SSQuartz */,
+				FE150C2119E775B000B3F9D4 /* quartz */,
+				FEF7F4101C850F7D00A07F79 /* SSQuartzResources */,
+				FE150BE219E770E000B3F9D4 /* Frameworks */,
+				FE150BC719E7708900B3F9D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE150BC719E7708900B3F9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE150BC619E7708900B3F9D4 /* SSQuartz.framework */,
+				FE150C2019E775B000B3F9D4 /* libquartz.a */,
+				FEF7F40F1C850F7D00A07F79 /* SSQuartzResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE150BC819E7708900B3F9D4 /* SSQuartz */ = {
+			isa = PBXGroup;
+			children = (
+				FEE30F7F1E9C3A3A00B14215 /* Classes */,
+				FEDA19371E2EC8290008EFEB /* Other Sources */,
+				FE150BC919E7708900B3F9D4 /* Supporting Files */,
+			);
+			path = SSQuartz;
+			sourceTree = "<group>";
+		};
+		FE150BC919E7708900B3F9D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA19081E2EC2F10008EFEB /* ShadowBorderBottom.png */,
+				FEDA19091E2EC2F10008EFEB /* ShadowBorderLeft.png */,
+				FEDA190A1E2EC2F10008EFEB /* ShadowBorderRight.png */,
+				FEDA190B1E2EC2F10008EFEB /* ShadowBorderTop.png */,
+				FE150BCA19E7708900B3F9D4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE150BE219E770E000B3F9D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA19061E2EC1A30008EFEB /* CoreFoundation.framework */,
+				FE1EDAEC1BFD5F5700ED7968 /* Foundation.framework */,
+				FE1EDAEA1BFD5F1B00ED7968 /* CoreVideo.framework */,
+				FE1EDAE71BFD5EE000ED7968 /* QuartzCore.framework */,
+				FE1EDADF1BFD5ED200ED7968 /* UIKit.framework */,
+				FE150BF719E7719B00B3F9D4 /* SSBase.xcodeproj */,
+				FE150C0319E771FB00B3F9D4 /* SSGraphics.xcodeproj */,
+				FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */,
+				FE602A751A2A01630033A498 /* CoreMedia.framework */,
+				FE602A731A2A01440033A498 /* AVFoundation.framework */,
+				FE150BE519E7711300B3F9D4 /* QuartzCore.framework */,
+				FE150BE319E7710B00B3F9D4 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE150BF819E7719B00B3F9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE150BFD19E7719B00B3F9D4 /* SSBase.framework */,
+				FE150BFF19E7719B00B3F9D4 /* libbase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE150C0419E771FB00B3F9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE150C0A19E771FB00B3F9D4 /* SSGraphics.framework */,
+				FE150C0C19E771FB00B3F9D4 /* libgraphics.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE150C0E19E7720000B3F9D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE150C1519E7720100B3F9D4 /* SSFoundation.framework */,
+				FE150C1719E7720100B3F9D4 /* libfoundation.a */,
+				FECF62351E1D547200FBD677 /* SSFoundationResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE150C2119E775B000B3F9D4 /* quartz */ = {
+			isa = PBXGroup;
+			children = (
+				FE150C2219E775B000B3F9D4 /* quartz.h */,
+			);
+			path = quartz;
+			sourceTree = "<group>";
+		};
+		FEDA19371E2EC8290008EFEB /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA193D1E2EC84B0008EFEB /* SSQuartz-Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		FEE30F7F1E9C3A3A00B14215 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FEF5637D1C740C7300665420 /* CADisplayLink+SSAdditions.h */,
+				FEF5637E1C740C7300665420 /* CADisplayLink+SSAdditions.m */,
+				FE150BF319E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h */,
+				FE150BF419E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m */,
+				FE150BE919E7712200B3F9D4 /* CALayer+SSAdditions.h */,
+				FE150BEA19E7712200B3F9D4 /* CALayer+SSAdditions.m */,
+				FE150BEB19E7712200B3F9D4 /* CATextLayer+SSAdditions.h */,
+				FE150BEC19E7712200B3F9D4 /* CATextLayer+SSAdditions.m */,
+				FE632C241CD97F66004CAE6B /* SSDisplayLink.h */,
+				FE632C251CD97F66004CAE6B /* SSDisplayLink.m */,
+				FE632C311CD98832004CAE6B /* SSDisplayLinkHelper.h */,
+				FE632C321CD98832004CAE6B /* SSDisplayLinkHelper.m */,
+				FE150BCB19E7708900B3F9D4 /* SSQuartz.h */,
+				FE05B36721D8893D0042A97F /* SSQuartzDefines.h */,
+				FEA5EF101A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h */,
+				FEA5EF111A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		FEF7F4101C850F7D00A07F79 /* SSQuartzResources */ = {
+			isa = PBXGroup;
+			children = (
+				FEDA193F1E2EC8A40008EFEB /* SSQuartzResources_Prefix.pch */,
+				FEF7F4111C850F7D00A07F79 /* Info.plist */,
+			);
+			path = SSQuartzResources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		FE150BC319E7708900B3F9D4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE632C331CD98832004CAE6B /* SSDisplayLinkHelper.h in Headers */,
+				FE150BCC19E7708900B3F9D4 /* SSQuartz.h in Headers */,
+				FE05B36821D8893D0042A97F /* SSQuartzDefines.h in Headers */,
+				FE150BF519E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.h in Headers */,
+				FEA5EF121A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.h in Headers */,
+				FE150BF119E7712200B3F9D4 /* CATextLayer+SSAdditions.h in Headers */,
+				FE150BEF19E7712200B3F9D4 /* CALayer+SSAdditions.h in Headers */,
+				FEDA193E1E2EC84B0008EFEB /* SSQuartz-Prefix.pch in Headers */,
+				FE632C261CD97F66004CAE6B /* SSDisplayLink.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		FE150BC519E7708900B3F9D4 /* SSQuartz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE150BDC19E7708A00B3F9D4 /* Build configuration list for PBXNativeTarget "SSQuartz" */;
+			buildPhases = (
+				FE150BC119E7708900B3F9D4 /* Sources */,
+				FE150BC219E7708900B3F9D4 /* Frameworks */,
+				FE150BC319E7708900B3F9D4 /* Headers */,
+				FE150BC419E7708900B3F9D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE150C1919E7720600B3F9D4 /* PBXTargetDependency */,
+			);
+			name = SSQuartz;
+			productName = SSQuartz;
+			productReference = FE150BC619E7708900B3F9D4 /* SSQuartz.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE150C1F19E775B000B3F9D4 /* quartz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE150C3119E775B000B3F9D4 /* Build configuration list for PBXNativeTarget "quartz" */;
+			buildPhases = (
+				FE150C1C19E775B000B3F9D4 /* Sources */,
+				FE150C1D19E775B000B3F9D4 /* Frameworks */,
+				FE150C1E19E775B000B3F9D4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FEF7F4231C850F9300A07F79 /* PBXTargetDependency */,
+				FE150D3619E77B4300B3F9D4 /* PBXTargetDependency */,
+			);
+			name = quartz;
+			productName = quartz;
+			productReference = FE150C2019E775B000B3F9D4 /* libquartz.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FEF7F40E1C850F7D00A07F79 /* SSQuartzResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEF7F41D1C850F7D00A07F79 /* Build configuration list for PBXNativeTarget "SSQuartzResources" */;
+			buildPhases = (
+				FEF7F40B1C850F7D00A07F79 /* Sources */,
+				FEF7F40C1C850F7D00A07F79 /* Frameworks */,
+				FEF7F40D1C850F7D00A07F79 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SSQuartzResources;
+			productName = SSQuartzResources;
+			productReference = FEF7F40F1C850F7D00A07F79 /* SSQuartzResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE150BBD19E7708900B3F9D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Dante Sabatier";
+				TargetAttributes = {
+					FE150BC519E7708900B3F9D4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FE150C1F19E775B000B3F9D4 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					FEF7F40E1C850F7D00A07F79 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+				};
+			};
+			buildConfigurationList = FE150BC019E7708900B3F9D4 /* Build configuration list for PBXProject "SSQuartz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE150BBC19E7708900B3F9D4;
+			productRefGroup = FE150BC719E7708900B3F9D4 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FE150BF819E7719B00B3F9D4 /* Products */;
+					ProjectRef = FE150BF719E7719B00B3F9D4 /* SSBase.xcodeproj */;
+				},
+				{
+					ProductGroup = FE150C0E19E7720000B3F9D4 /* Products */;
+					ProjectRef = FE150C0D19E7720000B3F9D4 /* SSFoundation.xcodeproj */;
+				},
+				{
+					ProductGroup = FE150C0419E771FB00B3F9D4 /* Products */;
+					ProjectRef = FE150C0319E771FB00B3F9D4 /* SSGraphics.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FE150BC519E7708900B3F9D4 /* SSQuartz */,
+				FE150C1F19E775B000B3F9D4 /* quartz */,
+				FEF7F40E1C850F7D00A07F79 /* SSQuartzResources */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FE150BFD19E7719B00B3F9D4 /* SSBase.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SSBase.framework;
+			remoteRef = FE150BFC19E7719B00B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE150BFF19E7719B00B3F9D4 /* libbase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libbase.a;
+			remoteRef = FE150BFE19E7719B00B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE150C0A19E771FB00B3F9D4 /* SSGraphics.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SSGraphics.framework;
+			remoteRef = FE150C0919E771FB00B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE150C0C19E771FB00B3F9D4 /* libgraphics.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libgraphics.a;
+			remoteRef = FE150C0B19E771FB00B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE150C1519E7720100B3F9D4 /* SSFoundation.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SSFoundation.framework;
+			remoteRef = FE150C1419E7720100B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FE150C1719E7720100B3F9D4 /* libfoundation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libfoundation.a;
+			remoteRef = FE150C1619E7720100B3F9D4 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FECF62351E1D547200FBD677 /* SSFoundationResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SSFoundationResources.bundle;
+			remoteRef = FECF62341E1D547200FBD677 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE150BC419E7708900B3F9D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDA190E1E2EC2F10008EFEB /* ShadowBorderLeft.png in Resources */,
+				FEDA19121E2EC2F10008EFEB /* ShadowBorderTop.png in Resources */,
+				FEDA19101E2EC2F10008EFEB /* ShadowBorderRight.png in Resources */,
+				FEDA190C1E2EC2F10008EFEB /* ShadowBorderBottom.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF7F40D1C850F7D00A07F79 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEDA190F1E2EC2F10008EFEB /* ShadowBorderLeft.png in Resources */,
+				FEDA19131E2EC2F10008EFEB /* ShadowBorderTop.png in Resources */,
+				FEDA19111E2EC2F10008EFEB /* ShadowBorderRight.png in Resources */,
+				FEDA190D1E2EC2F10008EFEB /* ShadowBorderBottom.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE150BC119E7708900B3F9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE632C341CD98832004CAE6B /* SSDisplayLinkHelper.m in Sources */,
+				FE632C271CD97F66004CAE6B /* SSDisplayLink.m in Sources */,
+				FEA5EF131A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m in Sources */,
+				FE150BF619E7715200B3F9D4 /* CAKeyframeAnimation+SSAdditions.m in Sources */,
+				FE150BF219E7712200B3F9D4 /* CATextLayer+SSAdditions.m in Sources */,
+				FE150BF019E7712200B3F9D4 /* CALayer+SSAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE150C1C19E775B000B3F9D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE632C351CD98832004CAE6B /* SSDisplayLinkHelper.m in Sources */,
+				FEF563811C740C7300665420 /* CADisplayLink+SSAdditions.m in Sources */,
+				FE150C3719E775BF00B3F9D4 /* CAKeyframeAnimation+SSAdditions.m in Sources */,
+				FE150C3819E775C100B3F9D4 /* CALayer+SSAdditions.m in Sources */,
+				FEA5EF141A03C6B2005B099F /* SSSpinningProgressIndicatorLayer.m in Sources */,
+				FE150C3919E775C400B3F9D4 /* CATextLayer+SSAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEF7F40B1C850F7D00A07F79 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FE150C1919E7720600B3F9D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SSFoundation;
+			targetProxy = FE150C1819E7720600B3F9D4 /* PBXContainerItemProxy */;
+		};
+		FE150D3619E77B4300B3F9D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = foundation;
+			targetProxy = FE150D3519E77B4300B3F9D4 /* PBXContainerItemProxy */;
+		};
+		FEF7F4231C850F9300A07F79 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FEF7F40E1C850F7D00A07F79 /* SSQuartzResources */;
+			targetProxy = FEF7F4221C850F9300A07F79 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FE150BDA19E7708A00B3F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE150BDB19E7708A00B3F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FE150BDD19E7708A00B3F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(BUILT_PRODUCTS_DIR)";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "SSQuartz/SSQuartz-Prefix.pch";
+				INFOPLIST_FILE = SSQuartz/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_framework",
+					AVKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sabatiersoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
+			};
+			name = Debug;
+		};
+		FE150BDE19E7708A00B3F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				FRAMEWORK_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "SSQuartz/SSQuartz-Prefix.pch";
+				INFOPLIST_FILE = SSQuartz/Info.plist;
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-weak_library",
+					/usr/lib/libSystem.B.dylib,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak_framework",
+					AVKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sabatiersoftware.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		FE150C3219E775B000B3F9D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE150C3319E775B000B3F9D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(CONFIGURATION_BUILD_DIR)";
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRIP_STYLE = "non-global";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FEF7F4121C850F7D00A07F79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSQuartzResources/SSQuartzResources-Prefix.pch";
+				INFOPLIST_FILE = SSQuartzResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabatiersoftware.SSQuartzResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FEF7F4131C850F7D00A07F79 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SSQuartzResources/SSQuartzResources-Prefix.pch";
+				INFOPLIST_FILE = SSQuartzResources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sabatiersoftware.SSQuartzResources;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE150BC019E7708900B3F9D4 /* Build configuration list for PBXProject "SSQuartz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE150BDA19E7708A00B3F9D4 /* Debug */,
+				FE150BDB19E7708A00B3F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE150BDC19E7708A00B3F9D4 /* Build configuration list for PBXNativeTarget "SSQuartz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE150BDD19E7708A00B3F9D4 /* Debug */,
+				FE150BDE19E7708A00B3F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE150C3119E775B000B3F9D4 /* Build configuration list for PBXNativeTarget "quartz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE150C3219E775B000B3F9D4 /* Debug */,
+				FE150C3319E775B000B3F9D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEF7F41D1C850F7D00A07F79 /* Build configuration list for PBXNativeTarget "SSQuartzResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEF7F4121C850F7D00A07F79 /* Debug */,
+				FEF7F4131C850F7D00A07F79 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE150BBD19E7708900B3F9D4 /* Project object */;
+}
