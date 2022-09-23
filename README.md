@@ -1,4 +1,4 @@
-# SSFoundation
+# SSQuartz
 
 Additions to the *[Core Animation](https://developer.apple.com/documentation/quartzcore)* framework
 
